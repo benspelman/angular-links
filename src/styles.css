@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+.app {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: fit-content;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+
+  #titleInput {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  input {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    width: 20vw;
+  }
+
+  button {
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    background: white;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background: green;
+    color: white;
+  }
+
+  margin-bottom: 1rem;
+}
+
+header {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.link {
+  width: 75vw;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+
+  .id {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:hover {
+    color: white;
+    background: red;
+    border: 1px solid red;
+    cursor: pointer;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+#credits {
+  margin: 0 auto;
+  width: 200px;
+  font-family: monospace;
+
+  a {
+    font-family: monospace;
+    color: black;
+  }
+}

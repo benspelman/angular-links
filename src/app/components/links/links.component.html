@@ -1,0 +1,30 @@
+<div class="links">
+  <form (submit)="addLink()">
+    <input
+      id="titleInput"
+      type="text"
+      name="urlInputLink"
+      placeholder="Enter Title"
+      [(ngModel)]="titleInputLink"
+    />
+    <input
+      type="text"
+      name="titleInputLink"
+      placeholder="Enter URL"
+      [(ngModel)]="urlInputLink"
+      required
+    />
+    <button type="submit">Add Link</button>
+  </form>
+  <div class="link" *ngFor="let link of links; let i = index">
+    <h2 class="id">{{ link.title }}</h2>
+    <div class="content">
+      <a href="{{ link.content }}" target="_blank">{{ link.content }}</a>
+    </div>
+    <button class="delete" (click)="deleteLink(i)">Remove</button>
+  </div>
+
+  <p id="credits">
+    Built by <a href="mailto:benspelman98@gmail.com">Ben Spelman</a>
+  </p>
+</div>
