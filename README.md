@@ -1,5 +1,6 @@
 # AngularLinks
 
+This project is a small Angular app that allows the user to add and remove links to the webpage.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
 ## Development server
